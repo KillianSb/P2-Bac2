@@ -1,0 +1,580 @@
+* {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.body2 {
+    display: block;
+    margin: 15px;
+    padding: 15px;
+}
+
+header {
+    display: block;
+    padding: 5px;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+    list-style: none;
+
+}
+
+input, button {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+li,a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+h2, li {
+    font-family: 'Nunito', sans-serif;
+}
+
+h3 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+}
+
+/* HEADER */
+
+p, .infos-logement{
+    font-family: 'Nunito', sans-serif;
+    color: rgba(0, 0, 0, 0.801);
+}
+
+.navbar {
+	padding: 15px;
+	/* width: 100%; */
+	height: 65px;	
+	display: flex;
+	align-items: center;
+}
+
+.navbar div img{
+    max-width: 60%;
+    margin-left: 70px;
+}
+
+.navbar ul.links {
+	margin-left: auto;
+	margin-right: 50px;
+	list-style: none;
+	display: flex;
+	align-items: center;		
+}
+
+.links li a {
+    color: black;
+    display: block;
+    padding: 15px;
+} 
+
+.links li:hover {
+    color: rgb(16 112 255);
+    border-top: 1px solid rgb(45, 129, 255);
+} 
+
+/* FIN HEADER */
+
+
+/* MENU HAUT */
+
+.title, .nom-hebergement, .nom-hebergement-populaire, .prix-hebergement, .prix-hebergement-populaire {
+    font-family: 'Nunito', sans-serif;
+}
+
+.menu-haut {
+    display: block;
+    padding: 15px;
+}
+
+.recherche {
+    display : flex;
+    width: 330px;
+    border-radius: 15px;
+}
+
+.recherche span {
+    display : flex;
+    padding: 15px;
+}
+
+#loupe {
+    display: none;
+}
+
+/* LISTE BOX RECHERCHE */
+.icon-recherche{
+    background-color: rgb(230 230 230 / 45%);
+    border-radius: 19px 0px 0px 19px;
+}
+
+.search {
+    background-color: rgb(32, 92, 255);
+    border-radius: 0px 19px 19px 0px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.search span {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.bar-search {
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    margin-left: 3%;
+}
+/* FIN LISTE BOX RECHERCHE */
+
+/* SOUS MENU */
+.sous-menu {
+    display: block;
+    padding: 15px;
+}
+
+.liste-filtres {
+    margin-bottom: 20px;
+}
+
+.liste-filtres div, .liste-filtres div {
+    display : inline-block;
+    text-align: center;
+}
+
+.title-sousmenu {
+    margin-right: 6px;
+}
+
+.liste-filtres div {
+    font-weight: bold;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.eco, .famillie, .love, .pets {
+    padding-right: 10px;
+    border: 1px solid rgba(109, 109, 109, 0.397);
+    margin: 15px;
+    border-radius: 25px;
+}
+
+.eco:hover, .famillie:hover, .love:hover, .pets:hover {
+    box-shadow: 2px 5px 5px rgb(0, 0, 0);
+    animation: hover_icon 3s ease-in-out 0s forwards;
+}
+
+
+@keyframes hover_icon {
+    20% { background-color: #385cffb0;opacity:0.7; }
+    60% { background-color: #254dff93;opacity:1; }
+    100% { background-color: #1d46ffa6;opacity:1; }
+}
+
+.eco i, .famillie i, .love i, .pets i {
+    background-color: rgb(126 168 255 / 36%);
+    border-radius: 15px;
+    margin-right: 6px;
+    padding: 7px;
+    color: rgb(32, 92, 255);
+}
+
+/* Ajustement de la largeur du logo pour un equilibre du design */
+.famillie i {
+    width: 20px;
+}
+/* Fin Ajustement */
+
+.infos div {
+    display : inline-grid;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.infos div i{
+    color: rgb(32, 92, 255)
+}
+
+.icon-infos {
+    border: 1px solid rgb(84 84 84);
+    border-radius: 15px;
+    height: 12px;
+    width: 12px;
+    text-align: center;
+}
+/* FIN SOUS MENU */
+
+
+/* FIN MENU HAUT */
+
+
+/* BOX CENTRAL*/
+
+.center-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.inside-elements-left {
+    box-shadow: 0px 30px 40px rgba(0,0,0,1%);
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 15px;
+    background-color: #b3b3b334;
+}
+
+.annonces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.title-left-box {
+    margin: 18px;
+}
+
+.box-annonce{
+    display: block;
+    box-shadow: 0px 30px 40px rgb(0 0 0 / 1%);
+    border-radius: 15px;
+    background-color: #ffffff;
+    /* margin-bottom: 15px; */
+    width: 30.6%;
+    margin: 25px 0;
+}
+
+.img-annonces {
+    height: 180px;
+    width: calc(100% - 10px);
+    padding: 5px;
+}
+
+.box-description {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 33px);
+    margin: 7px;
+    padding-left: 5%;
+    flex-wrap: wrap;
+}
+
+.box-img-populaire {
+    width: 50%;
+}
+
+.box-img-annonce {
+    width: 100%;
+}
+
+.box-img-annonce img {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.box-img-populaire img {
+    border-radius: 15px 0px 0px 15px;
+}
+
+.plus {
+    padding: 20px 0;
+    display: flex;
+    padding-left: 2%;
+    width: calc(100% - 24px);
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    align-content: center;
+}
+
+.plus:hover {
+    color: rgb(32, 92, 255);
+}
+
+.nom-hebergement, .nom-hebergement-populaire {
+    font-weight: bold;
+}
+
+.prix-hebergement {
+    font-weight: lighter;
+    color: rgb(83, 83, 83);
+}
+
+.title-right-box {
+    text-align: center;
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
+    margin: 18px;
+}
+
+.title-right-box div {
+    display: flex;
+    font-weight: bold;
+    width: 90%;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.title-right-box i {
+    display: flex;
+    text-align: center;
+    width: 10%;
+    font-size: 25px;
+}
+
+.inside-elements-right {
+    display: flex;
+    padding: 10px;
+    box-shadow: 0px 30px 40px rgb(0 0 0 / 1%);
+    border-radius: 15px;
+    background-color: #b3b3b334;
+    width: 30%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box-populaire {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 30px 40px rgba(0,0,0,1%);
+    border-radius: 15px;
+    margin: 20px 30px;
+    background-color: #ffffff;
+}
+
+.annonces-populaire {
+    align-items: start;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* margin-top: 39px; */
+}
+
+.img-populaire {
+    height: 180px;
+    width: calc(100% - 10px);
+    padding: 5px;
+    align-items: start;
+}
+
+.box-contenu-populaire {
+    /* max-width: 180px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.box-description-populaire {
+    display: block;
+    margin: 9px;
+}
+
+.prix-hebergement-populaire {
+    padding: 5px 0;
+}
+
+/* PARTIE ETOILES */
+
+.rating-annonces {
+    margin-top: 3px;
+}
+
+
+/* Par défaut, une étoile est en gris,
+   avec un padding et un curseur en forme de main. */
+.fa-star {
+	color: rgb(212, 212, 212);
+	cursor: pointer;
+	padding: 0.0625rem;
+}
+/* Si elle porte en plus la classe '.gold', elle sera en jaune. */
+.fa-star.gold {
+	color: rgb(32, 92, 255);
+}
+
+/* Le parent global '.rating' positionne le groupe des étoiles et le lien en colonne */
+.rating-annonces,  .rating-populaire{
+	display: flex;
+}
+
+/* Le groupe '.stars' positionne les étoiles
+        les unes à côté des autres sans espacements. */
+.stars {
+    display: inline-flex;
+    justify-content: center;
+}
+/* FIN PARTIE ETOILE */
+
+
+/* FIN BOX CENTRAL */
+
+
+/* BOX BAS */
+
+.nom-lieux {
+    font-family: 'Nunito', sans-serif;
+}
+
+#nom-lieux-2, #nom-lieux-5 {
+    padding-top: 10px;
+}
+
+.box-activites {
+    display: flex;
+    margin-top: 3%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title-box-activites {
+    display: block;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 5px;
+}
+
+.contenu-activites {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.box-activites2-3, .box-activites5-6 {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    justify-content: space-between;
+}
+
+.box-activites1, .box-activites4 {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.164);
+    background-color: rgb(255, 255, 255);
+}
+
+.box-activites2, .box-activites5 {
+    height: 52%;
+}
+
+#img-activites-2, #img-activites-5 {
+    height: 80%;
+}
+
+#img-activites-1, #img-activites-4 {
+    width: 100%;
+    height: 470px;
+}
+
+.box-activites3, .box-activites6 {
+    height: 40%;
+}
+
+.box-activites2, .box-activites3, .box-activites5, .box-activites6 {
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.164);
+    background-color: rgb(255, 255, 255);
+    /* height: 53%; */
+    flex-direction: column;
+}
+
+#img-activites2, #img-activites5 {
+    height: 220px;
+}
+
+.img-activites {
+    box-shadow: 0px 30px 40px rgb(0 0 0 / 1%);
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 167px;
+    overflow: hidden;
+}
+
+#photo1, #photo2 {
+    box-shadow: 0px 30px 40px rgb(0 0 0 / 1%);
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 470px;
+}
+
+.nom-lieux {
+    margin: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+/* FIN BOX BAS */
+
+
+/* PARTIE FOOTER */
+
+.titre-a-propos, .contenu-a-propos li, 
+.titre-nos-hebergements, .contenu-nos-hebergements li, 
+.titre-assistance, .contenu-assistance li {
+    font-family: 'Nunito', sans-serif;
+}
+
+footer {
+    background-color: #b3b3b334;
+    padding-top:15px;
+    padding-bottom:10px;
+    line-height:16px;
+    position: absolute;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.a-propos, .nos-hebergements, .assistance {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+.titre-a-propos, .titre-nos-hebergements, .titre-assistance {
+    font-weight: bold;
+    margin: 10px;
+    padding-bottom: 5px;
+}
+
+.contenu-a-propos li, .contenu-nos-hebergements li, .contenu-assistance li {
+    margin: 10px;
+}
+
+.contenu-a-propos li a:hover, .contenu-nos-hebergements li a:hover, .contenu-assistance li a:hover {
+    color: rgb(32, 92, 255);
+}
+
+/* FIN FOOTER */

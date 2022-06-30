@@ -1,0 +1,243 @@
+@media screen and (max-width: 767px){
+
+    .body2 {
+        display: unset;
+        margin: unset;
+        padding: unset;
+    }
+
+    header {
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 0;
+        width: inherit;
+        height: 65px;
+        display: flex;
+        align-items: center;
+    }
+
+    .links li a {
+        font-size: 23px;
+        border-top: none;
+        border-bottom: 4px solid rgb(255 255 255 / 0%);
+        text-align: center;
+    }
+
+    .links li:hover {
+        color: rgb(16 112 255);
+        border-top: none;
+        border-bottom: 4px solid rgb(45, 129, 255);
+    } 
+
+    .navbar div img {
+        margin-bottom: 30px;
+    }
+
+    .navbar ul.links {
+        margin-left: auto;
+        margin-right: auto;
+        list-style: none;
+        display: flex;
+        text-align: center;
+        display: flex;
+        width: 100%;
+    }
+
+    .links {
+        width: 100%;
+    }
+
+    .links1, .links2 {
+        width: 50%;
+    }
+
+    .menu-haut {
+        margin-top: 20%;
+    }
+
+    #h2-haut {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #p-haut {
+        font-size: 20px;
+    }
+
+    .recherche {
+        margin-top: 30px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search {
+        border-radius: 19px 19px 19px 19px;
+        width: 15%;
+        padding: 15px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .liste-search {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #icon-recherche {
+        width: 10%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #bar-rechercher {
+        width: 50%;
+        font-size: 18px;
+        margin-left: 5%;
+    }
+
+    #loupe {
+        display: initial;
+    }
+
+    #text_rechercher {
+        display: none;
+    }
+    
+    #title-sousmenu {
+        display: flex;
+    }
+
+    #love {
+        display: table;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    
+    .eco, .famillie, .love, .pets {
+        padding-right: 15px;
+    }
+
+    .eco i, .famillie i, .love i, .pets i {
+        padding: 10px;
+    }
+
+    .inside-elements-right {
+        width: calc(100% - 20px);
+        border-radius: 0;
+    }
+
+    .title-right-box div, .title-right-box i {
+        width: initial;
+    }
+
+    .title-right-box {
+        justify-content: space-between;
+    }
+
+    .box-populaire {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .box-img-populaire img {
+        margin: 5px;
+    }
+
+    .box-img-populaire {
+        width: 50%;
+    }
+
+    .center-box {
+        flex-direction: column;
+    }
+
+    .box-contenu-populaire {
+        align-content: flex-start;
+        justify-content: center;
+        width: 46%;
+        margin-left: 10px;
+    }
+
+    .inside-elements-left {
+        background-color: unset;
+        box-shadow: unset;
+        width: 100%;;
+    }
+
+    .title-left-box {
+        margin: 26px;
+    }
+
+    .box-annonce {
+        width: 90%;
+        margin: 8px;
+        box-shadow: 3px 30px 40px 10px rgb(0 0 0 / 10%);
+    }
+
+    .box-description {
+        width: 95%;
+        margin: 10px;
+        padding-left: 2%;
+        flex-wrap: wrap;
+    }
+
+    .box-img-annonce img {
+        margin: 5px;
+    }
+
+    .img-annonces {
+        width: calc(100% - 20px);
+    }
+
+    .plus {
+        font-size: 20px;
+        margin: 26px;
+    }
+
+    .title-box-activites {
+        margin: 26px;
+    }
+
+    .contenu-activites {
+        flex-direction: column;
+    }
+
+    .box-activites1, .box-activites2, .box-activites3, .box-activites4, .box-activites5, .box-activites6 {
+        margin: 15px 45px;
+    }
+
+    .box-activites1, .box-activites4 {
+        width: calc(100% - 90px);
+    }
+
+    .box-activites2-3, .box-activites5-6 {
+        width: 100%;
+    }
+
+    #img-activites2, #img-activites5 {
+        height: 470px;
+    }
+
+    .img-activites {
+        height: 470px;
+    }
+
+    .box-activites2, .box-activites3, .box-activites5, .box-activites6 {
+        height: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .a-propos, .nos-hebergements, .assistance {
+        margin: 15px;
+    }
+}
